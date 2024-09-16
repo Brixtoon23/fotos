@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "83376a22-e575-4e80-af2b-2e83d3486585",
+		"name": "UsuariosTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37530803",
+		"_collection_link": "https://www.postman.com/brixtoon23/workspace/viviendauniversitaria/collection/37530803-83376a22-e575-4e80-af2b-2e83d3486585?action=share&source=collection_link&creator=37530803"
+	},
+	"item": [
+		{
+			"name": "Obtener todos los Usuarios",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Obtener todos los Usuarios",
+					"originalRequest": {
+						"method": "GET",
+						"header": []
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Obtener un Usuario",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/Usuarios/Id",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"Usuarios",
+						"Id"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Obtener un Usuario",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/Usuarios/Id",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"Usuarios",
+								"Id"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Crear Usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cedula\":0,\r\n    \"nombre\":\"String\",\r\n    \"foto\":\"String\",\r\n    \"rol\":\"String\",\r\n    \"correo\":\"String\",\r\n    \"telefono\":0\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/Usuarios",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"Usuarios"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Crear Usuario",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cedula\":0,\r\n    \"nombre\":\"String\",\r\n    \"foto\":\"String\",\r\n    \"rol\":\"String\",\r\n    \"correo\":\"String\",\r\n    \"telefono\":0\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/Usuarios",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"Usuarios"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Actualizar correo de un Usuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/Usuarios/Id",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"Usuarios",
+						"Id"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Actualizar correo de un Usuario",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cedula\":1045457789,\r\n    \"nombre\":\"Juan Salah\",\r\n    \"foto\":\"String\",\r\n    \"rol\":\"Propietario\",\r\n    \"correo\":\"Brix@gmail.com\",\r\n    \"telefono\":3194096678\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/Usuarios/Id",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"Usuarios",
+								"Id"
+							]
+						}
+					},
+					"status": "Accepted",
+					"code": 202,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Eliminar un Usuario",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Eliminar un Usuario",
+					"originalRequest": {
+						"method": "GET",
+						"header": []
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
